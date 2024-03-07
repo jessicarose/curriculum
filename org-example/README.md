@@ -38,11 +38,11 @@ The "Repository access" you need is "Public repositories (read-only)", and you d
 
 #### Set up `.env`
 
-Copy the `.env.example` file over and name it `.env`. Edit the file and then change the line that says `HUGO_CURRICULUM_GITHUB_BEARER_TOKEN` to contain the token that you have generated earlier.
+Copy the `.env.example` file over and name it `.env`. Edit the file and then change the line that says `HUGO_CURRICULUM_GITHUB_BEARER_TOKEN` to contain the token that you have generated earlier. Save this to the root folder of your project, not within your example org folder.
 
 #### Run this command
 
-Run this command in a terminal, substituting in the github API token you generated above:
+Navigate into your example org folder and then run this command in a terminal:
 
 ```bash
 npm i
@@ -58,7 +58,7 @@ npm run start:dev -- --environment issues-are-cached-and-incomplete
 ### To create a new module
 
 ```bash
-./create_module <module-name>
+../tooling/create_module.sh <module-name>
 ```
 
 ### Linting
